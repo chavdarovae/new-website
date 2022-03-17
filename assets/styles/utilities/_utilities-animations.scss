@@ -24,11 +24,51 @@
 }
 
 .animations-delayed-appaerance {
-    animation-duration: 1000ms;
+    animation-duration: 600ms;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-name: delayed-apearance;
+}
+
+.animations-delayed-disappaerance {
+    animation-duration: 600ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: delayed-disapearance;
+}
+
+.animations-fancy-expand {
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: fancy-expand;
+}
+
+.animations-fancy-close {
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: fancy-close;
+}
+
+.animations-fancy-close {
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: fancy-close;
+}
+
+.animations-come-from-right {
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: come-from-right;
 }
 
 // icon rotation on expand
