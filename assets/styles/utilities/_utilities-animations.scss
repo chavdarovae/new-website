@@ -40,7 +40,7 @@
 }
 
 .animations-fancy-expand {
-    animation-duration: 600ms;
+    animation-duration: 1600ms;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -48,7 +48,7 @@
 }
 
 .animations-fancy-close {
-    animation-duration: 600ms;
+    animation-duration: 1600ms;
     animation-timing-function: ease-out;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -69,6 +69,11 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-name: come-from-right;
+    
+    @include for-desktop-up {
+        animation-name: none;
+    }
+    
 }
 
 // icon rotation on expand
@@ -81,3 +86,34 @@
     transform: rotate(-180deg);
     transition: transform 600ms linear;
 }
+
+// rotation
+
+.vert-to-right,
+.vert-to-left,
+.rot-to-left,
+.rot-to-right {
+    transform-origin: center center;
+    animation-duration: 600ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.vert-to-right {
+    animation-name: to-45-right;
+}
+
+.vert-to-left {
+    animation-name: to-45-left;
+}
+
+.rot-to-left {
+    animation-name: to-90-left;
+}
+
+.rot-to-right {
+    animation-name: to-90-right;
+}
+
+
