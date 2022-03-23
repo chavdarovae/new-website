@@ -1,0 +1,119 @@
+.animations-cloud-float {
+    animation-duration: 30000ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: cloud-float;
+}
+
+
+.animations-fancy-list {
+    li {
+        animation-duration: 1000ms;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        animation-name: fancy-list;
+    }
+
+    @for $i from 1 to 23 {
+        li:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
+        }
+    }
+}
+
+.animations-delayed-appaerance {
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: delayed-apearance;
+}
+
+.animations-delayed-disappaerance {
+    animation-duration: 600ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: delayed-disapearance;
+}
+
+.animations-fancy-expand {
+    animation-duration: 1600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: fancy-expand;
+}
+
+.animations-fancy-close {
+    animation-duration: 1600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: fancy-close;
+}
+
+.animations-fancy-close {
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: fancy-close;
+}
+
+.animations-come-from-right {
+    animation-duration: 600ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-name: come-from-right;
+    
+    @include for-desktop-up {
+        animation-name: none;
+    }
+    
+}
+
+// icon rotation on expand
+.fa-angle-down{
+    transform: rotate(0deg);
+    transition: transform 600ms linear;
+}
+  
+.fa-angle-down.expand {
+    transform: rotate(-180deg);
+    transition: transform 600ms linear;
+}
+
+// rotation
+
+.vert-to-right,
+.vert-to-left,
+.rot-to-left,
+.rot-to-right {
+    transform-origin: center center;
+    animation-duration: 600ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.vert-to-right {
+    animation-name: to-45-right;
+}
+
+.vert-to-left {
+    animation-name: to-45-left;
+}
+
+.rot-to-left {
+    animation-name: to-90-left;
+}
+
+.rot-to-right {
+    animation-name: to-90-right;
+}
+
+
