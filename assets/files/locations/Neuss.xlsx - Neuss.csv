@@ -1,14 +1,48 @@
-  Ort,     PLZ,Kundenname,Versandstelle, Auftrag,BS-Nummer, Verladadatum,Lieferdatum,Palettenart,Summe von geschätze_Paletten,19,Summe von geschätzes_Gesamtgewicht,Spediteur
-Sachsen                ,91623,      EHG Südwest Getränke,PS Mühlen                     ,347360,9263474,12/6/2021,12/7/2021,Europalette 1200x800          ,15,15,7678,
-Sachsen                ,91623,      EHG Südwest Getränke,PS Mühlen                     ,347360,9263474,,07.12.2021 Ergebnis,,15,15,7678,Carrypicker
-Gaimersheim            ,85080,      Edeka Lager Gaimersh,PS Mühlen                     ,349051,13657671,12/7/2021,12/8/2021,1/4 Chep 600x400              ,16,16,10509,
-Gaimersheim            ,85080,      Edeka Lager Gaimersh,PS Mühlen                     ,349051,13657671,,08.12.2021 Ergebnis,,16,16,10509,Carrypicker
-Sachsen                ,91623,      EHG Nordbayern-Sachs,PS Mühlen                     ,346551,1101625055,12/9/2021,11/18/2021,Europalette 1200x800          ,16,16,13582,
-Sachsen                ,91623,      EHG Nordbayern-Sachs,PS Mühlen                     ,346551,1101625055,,18.11.2021 Ergebnis,,16,16,13582,Carrypicker
-Sachsen                ,91623,      EHG Nordbayern-Sachs,PS Mühlen                     ,347540,1101633001,11/22/2021,11/23/2021,Europalette 1200x800          ,7,7,4000,
-Sachsen                ,91623,      EHG Nordbayern-Sachs,PS Mühlen                     ,347540,1101633001,,11/23/2021,Europalette 1200x800          ,13,13,8000,
-Sachsen                ,91623,      EHG Nordbayern-Sachs,PS Mühlen                     ,347540,1101633001,,23.11.2021 Ergebnis,,20,20,12000,Carrypicker
-Trostberg              ,83308,      EHG Südbayern mbH La,PS Mühlen                     ,348949,13657662,11/17/2021,11/18/2021,1/4 Chep 600x400              ,13,13,9108,
-Trostberg              ,83308,      EHG Südbayern mbH La,PS Mühlen                     ,348949,13657662,,18.11.2021 Ergebnis,,13,13,9108,Carrypicker
-Gaimersheim            ,85080,      Edeka Lager Straubin,PS Mühlen                     ,349040,13657677,11/19/2021,11/20/2021,1/4 Chep 600x400              ,14,14,9808,
-Gaimersheim            ,85080,      Edeka Lager Straubin,PS Mühlen                     ,349040,13657677,,20.11.2021 Ergebnis,,14,14,9808,Carrypicker
+Break,Section,  Ort/Abteilung,Person,Telefon,Hotline/Telefax
+new line,Niederlassungsleitung,Moselstr. 8 / 41464 Neuss,Neuss,0 21 31 - 40 75-0,0 21 31 - 40 75 - 924
+new line,Niederlassungsleitung,Neuss,Hr. Markus Drillges,0 21 31 - 40 75-201,
+new line,Disposition National,Halle / Leipzig /Chemnitz / Dresden,Hr. Jonas Fricke,-215,
+new line,Disposition National,Berlin / Magdeburg,Hr. Armin Meyer,-203,
+new line,Disposition National,Thüringen / Nordbayern / Kassel,Hr. Niklas Kurth,-210,0172-3185207
+new line,Disposition National,Bremen / Hannover,Hr. Marcus Goedrich,-205,
+new line,Disposition National,Hamburg,Hr. Andreas Rothe,-207,
+new line,Disposition National,Mecklenburg-Vorpommern / Schleswig-Holstein,Hr. Amin Mallahi,-221,
+new line,Disposition National,Nahverkehr,Hr. Adrian Wings,-214,
+new line,Disposition National,Vertretungen,Hr. Andreas Könen,-212,0172-3884793
+new line,Disposition National,Stuttgart / Ulm / Freiburg,Hr. Maurice Munderloh,-234,
+new line,Disposition National,Karlsruhe / Mannheim / Saar / FFM,Hr. Markus Giesen,-219,
+new line,Disposition National,Nürnberg / Regensburg / Augsburg / München,Hr. Stephan Schorreck,-217,0172-3228472
+new line,Disposition International,Osteuropa,Fr. Olga Michaelis,-303,
+new line,Disposition International,Polen / CZ / Ungarn / Balkan,Fr. Danuta Grzana,-305,
+new line,Disposition International,Benelux,Fr. Edith Auinger,-309,
+new line,Disposition International,Österreich / Italien / Schweiz,Hr. Angelo Cavaleri,-314,
+new line,Disposition International,West- und Nordeuropa,Hr. Markus Schmied,-301,0172-3116598
+new line,Verwaltung,Abrechnung,Fr. Silke Hecker,-230,
+new line,Verwaltung,Abrechnung,Fr. Bettina Bovenschen,-232,
+new line,Verwaltung,Schäden & Assistenz der Geschäftsleitung,Fr. Cornelia Leusch,-351,
+new line,Verwaltung,Lademittel,Fr. Anup Avasthi,-241,
+new line,Verwaltung,Lademittel,Fr. Angelique Weckopp,-242,
+new line,Verwaltung,Lademittel,Fr. Marie-Pierre Ztoti,-243,
+new line,Personalabteilung,Personalabteilung,Fr. Gertrud Hammelstein,-427,
+new line,Zentralbuchhaltung,Buchhaltungsleitung,Fr. Heike Geuenich,-460,
+new line,Zentralbuchhaltung,Buchstaben A - G,Fr. Brigitte Pietza,-402,
+new line,Zentralbuchhaltung,Buchstaben A - G,Fr. Dorothea Gotzen,-403,
+new line,Zentralbuchhaltung,Buchstaben A - G,Fr. Margarete Michalczyk,-413,
+new line,Zentralbuchhaltung,Buchstaben A - G,Fr. Nadine Hirsch,-404,
+new line,Zentralbuchhaltung,Buchstaben H - M,Hr. Frank Steins,-407,
+new line,Zentralbuchhaltung,Buchstaben H - M,Fr. Melek Sen,-410,
+new line,Zentralbuchhaltung,Buchstaben H - M,Fr. Sevilay Kurt,-422,
+new line,Zentralbuchhaltung,Buchstaben N - S,Hr. Frank Overtheil,-412,
+new line,Zentralbuchhaltung,Buchstaben N - S,Hr. Lars Kalka,-426,
+new line,Zentralbuchhaltung,Buchstaben N - S,Fr. Elisabeth Wrobel,-414,
+new line,Zentralbuchhaltung,Buchstaben N - S,Fr. Nadine Winters,-420,
+new line,Zentralbuchhaltung,Buchstaben T - Z,Fr. Heike Geuenich,-401,
+new line,Zentralbuchhaltung,Buchstaben T - Z,Fr. Claudia Hirsch,-416,
+new line,Zentralbuchhaltung,Buchstaben T - Z,Fr. Dilek Sen,-418,
+new line,Zentralbuchhaltung,Buchstaben T - Z,Fr. Tülay Cinal,-406,
+new line,Zentralbuchhaltung,"Neufra Italien, Österreich,",Fr. Lena Zinn,-419,
+new line,Zentralbuchhaltung,Ungarn,Fr. Natalie Gallus,-409,
+new line,Zentralbuchhaltung,Ungarn,Fr. Ayse Akpinar,-421,
+new line,Zentralbuchhaltung,Neufra Polen,Fr. Dilek Sen,-418,
+new line,Zentralbuchhaltung,Neufra Polen,Fr. Tülay Cinal,-406,
+new line,Zentralbuchhaltung,Neufra Spanien,Fr. Natalie Gallus,-409,
