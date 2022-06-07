@@ -24,7 +24,7 @@
     },
     "sustainable": {
       "title": "Alles aus einer Hand",
-      "info": "Wir bringen nicht nur Ihre Sendung ans Ziel, wir kontrollieren auch alle Lademittelbewegungen und sorgen bei Lademittelschulden für eine zeitnahe Rückführung. Sollte mal ein Schaden entstehen, werden etwaige Ersatzansprüche unverzüglich bearbeitet. Bei komplizierten Schadensereignissen kooperieren wir hierbei mit unserer Tochtergesellschaft <a href='http://www.gss-gmbh.de'>GSS Güter-Schaden-Service GmbH</a>."
+      "info": "Wir bringen nicht nur Ihre Sendung ans Ziel, wir kontrollieren auch alle Lademittelbewegungen und sorgen bei Lademittelschulden für eine zeitnahe Rückführung. Sollte mal ein Schaden entstehen, werden etwaige Ersatzansprüche unverzüglich bearbeitet. Bei komplizierten Schadensereignissen kooperieren wir hierbei mit unserer Tochtergesellschaft <a href='http://www.gss-gmbh.de' target='_blank'>GSS Güter-Schaden-Service GmbH</a>."
     },
     "specialty": {
       "title": "Spezialist in LKW-Verkehren",
@@ -40,7 +40,7 @@
     },
     "digitalisation-partner": {
       "title": "Partner für eine digitale Zukunft",
-      "info": "Mit unserer IT-Abteilung entwickeln wir unsere Programme immer weiter. Mit Colleto werden wir den Weg der Digitalisierung vorantreiben."
+      "info": "Mit unserer IT-Abteilung entwickeln wir unsere Software immer weiter. Mit Colleto werden wir den Weg der Digitalisierung vorantreiben."
     },
     "history": {
       "title": "Historie",
@@ -295,7 +295,7 @@
     },
     "international": {
       "title": "Internationale Transporte",
-      "info": "Wir transportieren ihre Güter auch außerhalb der Grenzen Europas. Unsere Experten für den Vorderen Orient finden Sie z.B. in der Niederlassung Frankfurt."
+      "info": "Wir transportieren Ihre Güter auch außerhalb der Grenzen Europas. Unsere Experten für den Vorderen Orient finden Sie z.B. in der Niederlassung Frankfurt."
     },
     "temperatureControlled": {
       "title": "Temperaturgeführte Transporte",
@@ -308,7 +308,7 @@
   },
   "career": {
     "info": {
-      "pr1": "Das Fundament unseres Unternehmens sind unsere Mitarbeiter/-innen. Daher sind wir immer auf der Suche nach motivierten neuen Kollegen/-innen. Berufserfahrene Disponenten/-innen sind der Garant für Qualität und Wachstum und sind selbstverständlich herzlich willkommen bei uns die Herausforderung der eigenständigen Bearbeitung einer Verkehrsrelation anzunehmen.",
+      "pr1": "Das Fundament unseres Unternehmens sind unsere Mitarbeiter/-innen. Daher sind wir immer auf der Suche nach motivierten neuen Kollegen/-innen. Berufserfahrene Disponenten/-innen sind der Garant für Qualität und Wachstum und sind selbstverständlich herzlich willkommen, bei uns die Herausforderung der eigenständigen Bearbeitung einer Verkehrsrelation anzunehmen.",
       "pr2": "Durchstöbern Sie gerne unsere aktuellen Stellenagebote, Bewerbungen können Sie direkt an die entsprechende Niederlassung senden."
     },
     "position": "Position",
