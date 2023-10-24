@@ -1,0 +1,17 @@
+.icon {
+	height: 14px;
+	width: auto;
+	background-repeat: no-repeat;
+	cursor: pointer;
+
+	&--interactive:hover {
+		scale: 1.1;
+	}
+
+	&--logo {
+		background-image: url(../../assets/icons/logo-big.svg) center no-repeat;
+	}
+}
+
+
+

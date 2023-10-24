@@ -1,0 +1,90 @@
+@import "../_app-variables.scss";
+
+// ****************************
+// mat-checkbox            ***
+// ****************************
+
+mat-checkbox.mat-mdc-checkbox {
+	.mdc-form-field {
+		.mdc-checkbox {
+			padding: 4px 8px 4px 0 !important;
+			margin: 0 !important;
+
+			.mat-mdc-checkbox-touch-target {
+				height: 100%;
+				width: 100%;
+			}
+
+			input {
+				width: fit-content !important;
+				height: fit-content !important;
+				top: 5px;
+				left: 2px;
+
+				&.mdc-checkbox--selected {
+
+				}
+
+			}
+
+			.mdc-checkbox__ripple {
+				display: none;
+			}
+
+			.mdc-checkbox__background {
+				position: static;
+				width: 16px;
+				height: 16px;
+
+				svg {
+					margin: 6px 0 0 2px;
+					width: 12px;
+					height: 12px;
+
+					path {
+						width: 12px;
+						height: 12px;
+					}
+				}
+
+				.mdc-checkbox__mixedmark {
+
+				}
+			}
+
+			.mdc-checkbox--selected ~ .mdc-checkbox__background {
+				svg path {
+					color: $text-color-ter;
+				}
+			}
+
+			.mat-ripple {
+				display: none;
+			}
+		}
+
+		label {
+			padding: 0 !important;
+		}
+	}
+}
+
+mat-checkbox.mat-mdc-checkbox.checkbox--no-box {
+
+	.mdc-form-field .mdc-checkbox {
+		position: absolute;
+		z-index: -200;
+		top: 50%;
+		left: 50%;
+		top: -10050%;
+		left: -100px;
+		overflow: hidden;
+		pointer-events: none;
+	}
+}
+
+.mat-mdc-checkbox.mat-accent {
+    --mdc-checkbox-unselected-focus-icon-color: #00b5dd !important;
+    --mdc-checkbox-unselected-hover-icon-color: #00b5dd !important;
+	--mdc-checkbox-disabled-selected-icon-color: #393E46 !important;
+}

@@ -1,1 +1,53 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./styles/_app-variables.scss";
+
+@import "./styles/settings/_settings-animations.scss";
+@import "./styles/settings/_settings-place-holders.scss";
+@import "./styles/settings/_settings-breakpoints.scss";
+
+@import "./styles/generic/_generic-normalize.scss";
+@import "./styles/generic/_generic-fonts.scss";
+@import "./styles/generic/_generic-scrollbar.scss";
+@import "./styles/generic/_generic-selection.scss";
+
+@import "./styles/elements/_elements-body.scss";
+@import "./styles/elements/_elements-paragraphs.scss";
+@import "./styles/elements/_elements-headings.scss";
+@import "./styles/elements/_elements-lists.scss";
+@import "./styles/elements/_elements-list-items.scss";
+@import "./styles/elements/_elements-images.scss";
+@import "./styles/elements/_elements-buttons.scss";
+@import "./styles/elements/_elements-links.scss";
+@import "./styles/elements/_elements-select.scss";
+@import "./styles/elements/_elements-check-box.scss";
+@import "./styles/elements/_elements-input.scss";
+@import "./styles/elements/_elements-placeholder.scss";
+@import "./styles/elements/_elements-text-area";
+
+@import "./styles/components/_components-card.scss";
+
+
+
+@import "./styles/objects/_objects-containers.scss";
+@import "./styles/objects/_objects-icons-custom.scss";
+
+@import "./styles/utilities/_utilities-danger.scss";
+@import "./styles/utilities/_utilities-bold.scss";
+@import "./styles/utilities/_utilities-text-overflow.scss";
+@import "./styles/utilities/_utilities-hidden.scss";
+@import "./styles/utilities/_utilities-invisible.scss";
+@import "./styles/utilities/_utilities-animations.scss";
+@import "./styles/utilities/_utilities-page-title.scss";
+@import "./styles/utilities/_utilities-margin-und-paddigns.scss";
+@import "./styles/utilities/_utilities-mobile-only.scss";
+@import "./styles/utilities/_utilities-tablet-only.scss";
+@import "./styles/utilities/_utilities-link-with-icon.scss";
+@import "./styles/utilities/_utilities-width.scss";
+
+
+html,
+body {
+	height: 100%;
+	scroll-behavior: smooth;
+	margin: 0;
+}

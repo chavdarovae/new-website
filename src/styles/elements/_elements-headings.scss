@@ -1,0 +1,63 @@
+@import "../_app-variables.scss";
+h1,
+.h1-like,
+h2,
+.h2-like,
+h3,
+.h3-like,
+h4,
+.h4-like-title,
+.h4-like{
+    font-family: $font-family-pri;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+h5,
+.h5-like,
+h6,
+.h6-like {
+    font-family: $font-family-sec;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+h1,
+.h1-like {
+    font-size: 30px;
+    line-height: 34px;
+}
+
+h2,
+.h2-like {
+    font-size: 26px;
+    line-height: 28px;
+}
+
+h3,
+.h3-like {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+h4,
+.h4-like,
+.h4-like-title {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+h5,
+.h5-like {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: $font-weight-thin;
+    margin-bottom: 0px;
+}
+
+h6,
+.h6-like {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: $font-weight-thin;
+}

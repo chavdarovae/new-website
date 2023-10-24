@@ -1,0 +1,109 @@
+@import "../_app-variables.scss";
+
+select {
+	/* styling */
+	background-color: $bg-pri;
+	display: inline-block;
+	font: inherit;
+	padding: 0.5em 2em 0.5em 0;
+
+	/* reset */
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+select {
+	background-image: linear-gradient(45deg, transparent 50%, $bg-pri 50%),
+		linear-gradient(135deg, $bg-pri 50%, transparent 50%);
+	background-position: calc(100% - 20px) calc(0.8em + 2px), calc(100% - 13px) calc(0.8em + 2px),
+		calc(100% - 2.5em) 0.5em;
+	background-size: 7px 7px, 7px 7px, 1px 1.7em;
+	background-repeat: no-repeat;
+}
+
+select:focus {
+	outline: 0;
+}
+
+select:-moz-focusring {
+	color: transparent;
+	text-shadow: 0 0 0 #000;
+}
+
+
+
+.mat-select-value {
+	padding-left: 5px;
+}
+
+mat-select {
+	.mat-mdc-select-trigger {
+		height: 13.8px !important;
+
+		.mat-mdc-select-value {
+			.mat-mdc-select-value-text {
+				.mat-mdc-select-min-line {
+					padding-left: 5px;
+				}
+			}
+		}
+
+		.mat-mdc-select-arrow-wrapper {
+			.mat-mdc-select-arrow {
+			}
+		}
+	}
+}
+
+mat-option {
+	.mdc-list-item__primary-text {
+		width: 100% !important;
+	}
+}
+
+.cdk-overlay-pane {
+	// width: fit-content !important;
+}
+
+.disabled {
+	position: relative;
+	z-index: 0;
+
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 200;
+	}
+
+	.mat-mdc-select-arrow {
+		display: none !important;
+	}
+}
+
+
+mat-select-trigger {
+	min-height: 10px;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+
+	.icon {
+		position: static !important;
+		top: unset !important;
+		left: unset !important;
+		right: unset !important;
+	}
+}
+
+.mat-option-disabled .mat-option-text {
+	color: $inactive !important;
+}

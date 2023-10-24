@@ -1,0 +1,22 @@
+@import "../_app-variables.scss";
+
+a {
+    color: $app;
+    text-decoration: none;
+    outline : none;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: $text-color-pri;
+        transform: scale(1.01);
+    }
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+*:focus {
+    outline: none;
+}

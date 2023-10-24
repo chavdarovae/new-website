@@ -1,0 +1,11 @@
+
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="shipment-pos" fill="#535A65" fill-rule="nonzero">
+            <polygon id="Path" points="7.99999998 4.97727311 7.99999998 14.5945946 18 10.3158326 18 2.24532225"></polygon>
+            <polygon id="Path" points="15.1801004 1.43690422 5.59624412 4.14663532 7.99999998 4.97727311 18 2.24532225 12.8998853 0.752055023 12.84492 0.752055023"></polygon>
+            <polygon id="Path" points="0 11.2903709 7.99999998 14.5945946 7.99999998 4.97727311 5.59624412 4.14663532 5.59624412 6.84163455 2.83568076 5.82646914 2.83568076 3.20524142 3.35345406e-05 2.24532225"></polygon>
+            <polygon id="Path" points="10.3313115 0 3.35345405e-05 2.24532225 2.83568076 3.20524142 12.8998853 0.752055023"></polygon>
+        </g>
+    </g>
+</svg>
