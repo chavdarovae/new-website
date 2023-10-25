@@ -1,71 +1,21 @@
-:root {
-  	--appColor: '#393E46',
-	--appAccentColor: '#28ACF8',
-	--appProColor: '#9D8320',
-	--appBgColor: '#EFEFEF',
-	--appSecondaryBgColor: '#ffffff',
-	--appProBgColor: '#DFCDC9',
-	--appTextColor: '#151613',
-	--appSecondaryTextColor: '#7e7b7b',
-	--appTertiaryTextColor: '#ffffff',
-	--appDangerColor: '#DB5461',
-	--appWarnColor: '#E55812',
-	--appInfoColor: '#3fc48a',
-	--rowTextColor: '#151613',
-	--rowBgColor: '#DFCDC9',
-	--rowHeaderTextColor: '#393E46',
-	--rowHeaderBgColor: '#DFCDC9',
-	--rowSecBgColor: '#D8D8D8'
-}
-
 // general colors
-$app: var(--appColor);
-$app-accent: var(--appAccentColor);
-$app-pro: var(--appProColor);
+$blue: #28ACF8;
+$green: #00FE90;
+$black: #393E46;
+$red: #DB5461;
+$skin: #F9E0D9;
+$beige: #D5C7BC;
 
 // background colors:
-$bg-pri: var(--appBgColor);
-$bg-sec: var(--appSecondaryBgColor);
-$bg-pro: var(--appProBgColor);
+$bg-light: #FFFFFF;
+$bg-dark: $black;
 
 // text colors
-$text-color-pri: var(--appTextColor);
-$text-color-sec: var(--appSecondaryTextColor);
-$text-color-ter: var(--appTertiaryTextColor);
-
-// utility colors:
-$success: var(--appInfoColor);
-$info: var(--appInfoColor);
-$danger: var(--appDangerColor);
-$danger-light: #e18990;
-$warning:  var(--appWarnColor);
-$inactive: rgba(#393E46, 0.37);
-$inactive-accent: rgba(#28ACF8, 0.37);
-
-// button colors
-$button-accent: $app-accent;
-$button-pri: $app;
-
-// table colors:
-$row: var(--rowTextColor);
-$row-light: var(--rowBgColor);
-$row-header-text: var(--rowHeaderTextColor);
-$row-header-bg: var(--rowHeaderBgColor);
-$row-bg-color: var(--rowSecBgColor);
+$text-pri: #FFFFFF;
+$text-sec: $black;
 
 // typography:
 $font-size-base: 12px;
-$font-size-inputs: calc(0.8*$font-size-base);
-$font-size-tabs: calc(1.3*$font-size-base);
-$font-size-headers: calc(1.2*$font-size-base);
-
-$font-weight-thin: 200;
-$font-weight-normal: 300;
-$font-weight-semi-bold: 500;
-$font-weight-bold: 600;
-$font-weight-bolder: 700;
-$font-weight-black: 800;
-
 $font-family-pri: 'Montserrat', sans-serif;
 $font-family-sec: 'Roboto', sans-serif;
 $font-family-icon: 'Font Awesome 5 Free';
@@ -76,7 +26,6 @@ $rounding-pri: 5px;
 
 $shadow-pri: 5px -5px 5px 0 rgba(0,0,0,0.14); //2dp
 $shadow-sec: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20); //4dp
-$shadow-ter: inset 0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20); //1dp
 $shadow-hover: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.20); //8dp
 
 

@@ -6,27 +6,3 @@
   white-space: nowrap;
   width: 100%;
 }
-
-.text {
-	width: fit-content;
-	position: relative;
-	z-index: 10;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	background-color: $bg-sec;
-
-
-	&::before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: -3px;
-		bottom: -3px;
-		left: -5px;
-		right: -5px;
-		background-color: inherit;
-		z-index: -1;
-		max-width: 220px !important;
-	}
-}

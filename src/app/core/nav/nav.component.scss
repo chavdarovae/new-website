@@ -1,0 +1,74 @@
+@import "../../../styles/_app-variables.scss";
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@for $i from 1 through 5 {
+		.sec:nth-child(#{$i}) {
+			z-index: calc(10 - #{$i});
+		}
+	}
+}
+
+.sec {
+	min-width: 5%;
+	width: calc(100% / 5);
+	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transition: width 0.5s ease-in;
+	border-top-right-radius: 60px;
+	border-bottom-right-radius: 60px;
+	// box-shadow: $shadow-pri;
+
+	// &:nth-child(1) {
+	// 	width: 40%;
+
+	// 	.sec__title {
+	// 		display: block;
+	// 	}
+	// }
+
+	&::before {
+		content: "";
+		display: block;
+		height: 100%;
+		width: 60px;
+		position: absolute;
+		top: 0;
+		left: -60px;
+		background-color: inherit;
+	}
+
+	&__block {
+		position: absolute;
+		top: 200px;
+		right: 150px;
+	}
+
+	&__title {
+		position: absolute;
+		top: 80%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 30px;
+		color: $text-sec;
+		font-family: $font-family-sec;
+	}
+
+	&__img {
+		width: auto;
+		height: 700px;
+	}
+
+	&:hover {
+		width: 80% !important;
+		.sec__block {
+			right: 200px;
+		}
+	}
+}
