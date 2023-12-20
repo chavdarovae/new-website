@@ -1,0 +1,36 @@
+@import "../_app-variables.scss";
+
+
+.bubble {
+	position: absolute;
+	border-radius: 50%;
+	background-color: white;
+	background: linear-gradient(to left, transparent, #88bfb0);
+	box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.2);
+
+	&::before {
+		// content: "";
+		// position: absolute;
+		// display: block;
+		// top: 5px;
+		// left: 7px;
+		// height: 100%;
+		// width: 100%;
+		// background: #84b9bf;
+		// opacity: 0.8;
+		// overflow: hidden;
+	}
+
+	&::after {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 40px;
+		left: 70px;
+		height: 25px;
+		width: 15px;
+		border-radius: 50%;
+		background: white;
+		overflow: hidden;
+	}
+}

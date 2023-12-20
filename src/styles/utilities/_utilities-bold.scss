@@ -1,34 +1,40 @@
 @import "../_app-variables.scss";
 
 .bold {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .super-bold {
-  font-weight: 900;
+	font-weight: 900;
 }
-
 
 .blue {
 	background-color: $blue;
+	background: linear-gradient(60deg, #155b84 0, $blue 40%) $blue;
 }
 
 .green {
 	background-color: $green;
+	background: linear-gradient(60deg, #00a85f 0, $green 40%) $blue;
 }
 
 .red {
 	background-color: $red;
+	background: linear-gradient(60deg, #84323A 0, $red 40%) $red;
 }
 
 .black {
 	background-color: $black;
+	background: linear-gradient(60deg, #393e46 0, $black 40%) $black;
 }
 
 .skin {
 	background-color: $skin;
+	background: linear-gradient(60deg, #A2928D 0, $skin 40%) $skin;
 }
 
 .beige {
 	background-color: $beige;
+	background: linear-gradient(125deg, #393e46 0, $beige 100%) $beige;
+
 }
