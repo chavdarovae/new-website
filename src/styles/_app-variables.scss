@@ -1,18 +1,18 @@
 // general colors
-$blue: #28ACF8;
-$green: #00FE90;
-$black: #393E46;
-$red: #DB5461;
-$skin: #F9E0D9;
-$beige: #D5C7BC;
+$first: #28ACF8;
+$second: #00FE90;
+$third: #393E46;
+$fourth: #DB5461;
+$fifth: #F9E0D9;
+$sixth: #D5C7BC;
 
 // background colors:
 $bg-light: #FFFFFF;
-$bg-dark: $black;
+$bg-dark: $third;
 
 // text colors
 $text-pri: #FFFFFF;
-$text-sec: $black;
+$text-sec: $third;
 
 // typography:
 $font-size-base: 12px;

@@ -1,13 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { NgClass } from '@angular/common';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'clt-first',
-  standalone: true,
-  imports: [],
-  templateUrl: './first.component.html',
-  styleUrl: './first.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+	selector: 'clt-first',
+	standalone: true,
+	imports: [NgClass],
+	templateUrl: './first.component.html',
+	styleUrl: './first.component.scss',
+	changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FirstComponent {
-
+	@Input() isPreview!: boolean;
 }

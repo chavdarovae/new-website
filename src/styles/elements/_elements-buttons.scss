@@ -1,2 +1,9 @@
 @import "../_app-variables.scss";
 
+button {
+	padding: 5px 15px;
+	background-color: $bg-light;
+	color: $text-sec;
+	font-family: $font-family-pri;
+	text-transform: uppercase;
+}
