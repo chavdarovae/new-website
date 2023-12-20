@@ -1,0 +1,43 @@
+@import "../../../../styles/app-variables";
+
+.sec {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	transition: width 1s ease-in;
+	padding: 150px;
+
+	&__title {
+		text-wrap: nowrap;
+	}
+
+	&__subtitle {
+		text-wrap: nowrap;
+		color: $text-pri;
+	}
+
+	&__img,
+	&__shadow {
+		position: absolute;
+		border-radius: 50%;
+		right: 150px;
+		width: 300px;
+	}
+
+	&__img {
+		bottom: 35%;
+		overflow: hidden;
+		height: 300px;
+	}
+
+	&__shadow {
+		bottom: 20%;
+		background-color: black;
+		filter: blur(3px);
+		height: 10px;
+	}
+}

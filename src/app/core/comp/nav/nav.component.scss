@@ -1,25 +1,55 @@
 @import "../../../../styles/_app-variables.scss";
 
-.nav {
+::ng-deep .nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 	@for $i from 1 through 5 {
-		.section:nth-child(#{$i}) {
+		.nav__item:nth-child(#{$i}) {
 			z-index: calc(10 - #{$i});
 
-			.sec__block {
-				animation-delay: calc(0.3s * #{$i});
+			.floating {
+				animation-delay: calc(0.5s * #{$i});
+				animation-duration: calc(0.05s * #{$i} + 2s);
 			}
 		}
 	}
 
 	&__item {
-		min-width: calc(20% / 4);
+		min-width: calc(10% / 4);
 		width: calc(100% / 5);
 		height: 100vh;
 		overflow: hidden;
 		transition: width 0.5s ease-in;
+
+		.sec {
+			padding: 50px;
+		}
+
+		.sec__title,
+		.sec__subtitle {
+			width: 0px;
+			overflow: hidden;
+			transition: width 0.5s ease-in;
+		}
+
+		.sec__img,
+		.sec__shadow {
+			right: 50px;
+		}
+
+		&:hover {
+			width: 140% !important;
+
+			.sec__title,
+			.sec__subtitle {
+				width: 350px;
+			}
+
+			.sec__block {
+				right: 10%;
+			}
+		}
 	}
 }

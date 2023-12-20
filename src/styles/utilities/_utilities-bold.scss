@@ -8,32 +8,32 @@
 	font-weight: 900;
 }
 
-.blue {
+.first {
 	background-color: $first;
 	background: linear-gradient(60deg, #155b84 0, $first 40%) $first;
 }
 
-.green {
+.second {
 	background-color: $second;
 	background: linear-gradient(60deg, #00a85f 0, $second 40%) $first;
 }
 
-.red {
+.fourth {
 	background-color: $fourth;
 	background: linear-gradient(60deg, #84323A 0, $fourth 40%) $fourth;
 }
 
-.black {
+.third {
 	background-color: $third;
 	background: linear-gradient(60deg, #393e46 0, $third 40%) $third;
 }
 
-.skin {
+.fifth {
 	background-color: $fifth;
 	background: linear-gradient(60deg, #A2928D 0, $fifth 40%) $fifth;
 }
 
-.beige {
+.sixth {
 	background-color: $sixth;
 	background: linear-gradient(125deg, #393e46 0, $sixth 100%) $sixth;
 
