@@ -19,11 +19,9 @@
 @import "./styles/elements/_elements-buttons.scss";
 @import "./styles/elements/_elements-links.scss";
 @import "./styles/elements/_elements-select.scss";
-@import "./styles/elements/_elements-check-box.scss";
-@import "./styles/elements/_elements-input.scss";
 @import "./styles/elements/_elements-placeholder.scss";
-@import "./styles/elements/_elements-text-area";
 
+@import "./styles/components/_components-section.scss";
 @import "./styles/components/_components-card.scss";
 @import "./styles/components/_components-bubble.scss";
 
@@ -43,9 +41,3 @@
 @import "./styles/utilities/_utilities-width.scss";
 
 
-html,
-body {
-	height: 100%;
-	scroll-behavior: smooth;
-	margin: 0;
-}

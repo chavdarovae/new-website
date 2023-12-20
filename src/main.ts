@@ -11,8 +11,7 @@ bootstrapApplication(AppComponent, {
 	providers: [
 		importProvidersFrom(
 			BrowserModule,
-			RouterModule.forRoot(CLT_ROUTES, { anchorScrolling: 'enabled', scrollPositionRestoration: 'disabled', onSameUrlNavigation: 'reload' })
+			RouterModule.forRoot(CLT_ROUTES, { anchorScrolling: 'enabled', scrollPositionRestoration: 'disabled', onSameUrlNavigation: 'reload', useHash: true })
 		)
 	]
-})
-	.catch(err => console.error(err));
+}).catch(err => console.error(err));

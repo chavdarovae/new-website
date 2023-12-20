@@ -1,0 +1,43 @@
+@import "../../../../styles/_app-variables.scss";
+.nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@for $i from 1 through 5 {
+		.section:nth-child(#{$i}) {
+			z-index: calc(10 - #{$i});
+
+			.sec__block {
+				animation-delay: calc(0.3s * #{$i});
+			}
+		}
+	}
+
+	&__item {
+		min-width: calc(20% / 4);
+		width: calc(100% / 5);
+		height: 100vh;
+		overflow: hidden;
+		transition: width 0.5s ease-in;
+
+		.sec {
+			width: 100% !important;
+			height: 100% !important;
+		}
+
+		.sec__title {
+			width: 0px;
+			overflow: hidden;
+			transition: width 0.5s ease-in;
+		}
+
+		&:hover {
+			width: 140% !important;
+
+			.sec__title {
+				width: 350px;
+			}
+		}
+	}
+}
