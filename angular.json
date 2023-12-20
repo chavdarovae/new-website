@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "colletoWebSite:build:production"
+              "buildTarget": "colletoWebSite:build:production"
             },
             "development": {
-              "browserTarget": "colletoWebSite:build:development"
+              "buildTarget": "colletoWebSite:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "colletoWebSite:build"
+            "buildTarget": "colletoWebSite:build"
           }
         },
         "test": {
