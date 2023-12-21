@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PreviewComponent {
-	@Input() navOrder: 'first' | 'second' | 'third' | 'fourth' | 'fifth' = 'first';
+	@Input() navOrder: 'first' | 'second' | 'third' | 'fourth' | 'fifth' | 'datenschutz' | 'impressum' = 'first';
 	@Input() isPreview = false;
 
 	title = {
@@ -19,6 +19,8 @@ export class PreviewComponent {
 		third: 'Die Koordination',
 		fourth: 'Das Betrieb',
 		fifth: 'Das Team',
+		datenschutz: 'Datenschutzerklärung',
+		impressum: 'impressum',
 	}
 
 	subtitle = {
@@ -27,5 +29,7 @@ export class PreviewComponent {
 		third: 'Subtitle ...',
 		fourth: 'Subtitle ...',
 		fifth: 'Subtitle ...',
+		datenschutz: 'Subtitle ...',
+		impressum: 'Subtitle ...',
 	}
 }

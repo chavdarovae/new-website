@@ -1,13 +1,14 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { PreviewComponent } from 'src/app/core/comp/preview/preview.component';
 
 @Component({
   selector: 'clt-datenschutz',
   standalone: true,
-  imports: [],
+  imports: [PreviewComponent],
   templateUrl: './datenschutz.component.html',
-  styleUrl: './datenschutz.component.scss',
+  styleUrls: ['./datenschutz.component.scss', '../impressum/impressum.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class DatenschutzComponent {
-
+	@Input() isPreview!: boolean;
 }

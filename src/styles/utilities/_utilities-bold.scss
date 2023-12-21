@@ -8,7 +8,8 @@
 	font-weight: 900;
 }
 
-.first {
+.first,
+.impressum {
 	background-color: $first;
 	background: linear-gradient(60deg, #155b84 0, $first 40%) $first;
 }
@@ -18,14 +19,15 @@
 	background: linear-gradient(60deg, #00a85f 0, $second 40%) $first;
 }
 
-.fourth {
-	background-color: $fourth;
-	background: linear-gradient(60deg, #84323A 0, $fourth 40%) $fourth;
-}
-
 .third {
 	background-color: $third;
 	background: linear-gradient(60deg, #393e46 0, $third 40%) $third;
+}
+
+.fourth,
+.datenschutz {
+	background-color: $fourth;
+	background: linear-gradient(60deg, #84323A 0, $fourth 40%) $fourth;
 }
 
 .fifth {

@@ -1,9 +1,22 @@
 @import '../../../../styles/app-variables';
 
+:host {
+	display: flex;
+	flex-flow: row nowrap;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: $header-height;
+	z-index: 10;
 
-.logo {
-	width: auto;
-	height: 60px;
-	background-repeat: no-repeat;
+	.logo {
+		width: auto;
+		height: 40px;
+		background-repeat: no-repeat;
+	}
+
+	.menu {
+		font-size: 3rem;
+	}
 }
 

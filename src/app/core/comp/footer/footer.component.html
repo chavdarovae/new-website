@@ -1,3 +1,5 @@
-<a class="ml-20" [routerLink]="['/impressum']" routerLinkActive="router-link-active">Impressum</a>
-<a class="mr-20" [routerLink]="['/datenschutz']" routerLinkActive="router-link-active">Datenschutzerklärung</a>
-<span class="ml-a mr-20" >&copy; Copyright 2023</span>
+<div *ngIf="compact" class="row row--no-wrap compact">
+	<a class="ml-20" [routerLink]="['/impressum']" routerLinkActive="router-link-active">Impressum</a>
+	<a class="mr-20" [routerLink]="['/datenschutz']" routerLinkActive="router-link-active">Datenschutzerklärung</a>
+	<span class="ml-a mr-20" >&copy; Copyright 2023</span>
+</div>

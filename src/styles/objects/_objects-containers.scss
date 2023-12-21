@@ -2,7 +2,8 @@
 
 .container {
   height: 100vh;
-  padding: calc($header-height + 5px) 20px 20px 20px;
+  width: 80vw;
+  margin: calc($header-height + 15px) auto 20px auto;
 }
 
 .row {
