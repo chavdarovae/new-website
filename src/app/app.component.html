@@ -1,7 +1,8 @@
 <div class="clt">
-	<clt-header class="clt__header row"></clt-header>
+	<clt-header class="clt__header"></clt-header>
+	<div *ngIf="(activePath$ | async) as activePath" [class]="'clt__header-background ' + activePath"></div>
 	<div class="clt__main">
 		<router-outlet></router-outlet>
 	</div>
-	<clt-footer class="clt__footer row"></clt-footer>
+	<clt-footer class="clt__footer"></clt-footer>
 </div>

@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FifthComponent } from "../../../features/fifth/fifth.component";
 import { FirstComponent } from "../../../features/first/first.component";
+import { FourthComponent } from "../../../features/fourth/fourth.component";
 import { SecondComponent } from "../../../features/second/second.component";
 import { ThirdComponent } from "../../../features/third/third.component";
-import { FourthComponent } from "../../../features/fourth/fourth.component";
-import { FifthComponent } from "../../../features/fifth/fifth.component";
 
 @Component({
     selector: 'clt-nav',
