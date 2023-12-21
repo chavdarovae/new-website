@@ -1,4 +1,6 @@
 @import "../_app-variables.scss";
+@import "../../styles/settings/settings-breakpoints";
+
 h1,
 .h1-like,
 h2,
@@ -24,20 +26,33 @@ h6,
 
 h1,
 .h1-like {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 28px;
+	@include for-tablet-landscape-up {
+		font-size: 40px;
+    	line-height: 44px;
+	}
 }
 
 h2,
 .h2-like {
     font-size: 32px;
     line-height: 38px;
+	@include for-tablet-landscape-up {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
 }
 
 h3,
 .h3-like {
     font-size: 28px;
     line-height: 31px;
+	@include for-tablet-landscape-up {
+		font-size: 28px;
+    	line-height: 31px;
+	}
 }
 
 h4,
@@ -45,6 +60,10 @@ h4,
 .h4-like-title {
     font-size: 22px;
     line-height: 24px;
+	@include for-tablet-landscape-up {
+		font-size: 22px;
+    	line-height: 24px;
+	}
 }
 
 h5,
@@ -52,11 +71,21 @@ h5,
     font-size: 28px;
     line-height: 31px;
     font-weight: 300;
+	@include for-tablet-landscape-up {
+		font-size: 28px;
+		line-height: 31px;
+		font-weight: 300;
+	}
 }
 
 h6,
 .h6-like {
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 25px;
+    line-height: 28px;
     font-weight: 300;
+	@include for-tablet-landscape-up {
+		font-size: 40px;
+		line-height: 44px;
+		font-weight: 300;
+	}
 }

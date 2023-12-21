@@ -1,5 +1,31 @@
-<div *ngIf="compact" class="row row--no-wrap compact">
-	<a class="ml-20" [routerLink]="['/impressum']" routerLinkActive="router-link-active">Impressum</a>
+<div *ngIf="!activePath" class="row row--no-wrap compact">
+	<a [routerLink]="['/impressum']" routerLinkActive="router-link-active">Impressum</a>
 	<a class="mr-20" [routerLink]="['/datenschutz']" routerLinkActive="router-link-active">Datenschutzerklärung</a>
 	<span class="ml-a mr-20" >&copy; Copyright 2023</span>
+</div>
+
+<div *ngIf="activePath" [class]="'col normal ' + activePath">
+	<div class="row row--space-around row--centered-vert mb-a mt-20">
+		<div class="col">
+			<h4>Colleto Solution GmbH</h4>
+			Wandalenweg 20
+			<br>
+			Hamburg 20097
+			<br>
+			team&commat;colleto.de
+		</div>
+
+		<div class="col">
+			<h5> Interesse? </h5>
+		</div>
+
+		<div class="col">
+			<img class="logo" src="../../../../assets/img/logo-white.png">
+		</div>
+	</div>
+	<hr>
+	<div class="row row--centered pt-5 pb-5">
+		<a [routerLink]="['/impressum']" routerLinkActive="router-link-active">Impressum</a>
+		<a [routerLink]="['/datenschutz']" routerLinkActive="router-link-active">Datenschutzerklärung</a>
+	</div>
 </div>

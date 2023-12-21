@@ -61,14 +61,6 @@
 			}
 		}
 
-		.sec__title {
-			font-size: 25px;
-
-			@include for-tablet-landscape-up {
-				font-size: 40px;
-			}
-		}
-
 		.sec__subtitle {
 			display: none;
 

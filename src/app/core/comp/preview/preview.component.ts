@@ -20,7 +20,7 @@ export class PreviewComponent {
 		fourth: 'Das Betrieb',
 		fifth: 'Das Team',
 		datenschutz: 'Datenschutzerklärung',
-		impressum: 'impressum',
+		impressum: 'Impressum',
 	}
 
 	subtitle = {
