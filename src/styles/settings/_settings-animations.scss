@@ -1,3 +1,4 @@
+@import './../settings/settings-breakpoints';
 
 .floating {
     animation-name: floating;
@@ -59,11 +60,21 @@
 @keyframes shorten {
     0% {
 		height: 100vh;
-		width: 80vw;
+		width: 100vw;
+
+		@include for-tablet-landscape-up {
+			height: 100vh;
+			width: 80vw;
+		}
 	}
     100%  {
-		height: 70vh;
+		height: 50vh;
 		width: 100vw;
+
+		@include for-tablet-landscape-up {
+			height: 70vh;
+			width: 100vw;
+		}
 	}
 }
 

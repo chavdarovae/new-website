@@ -1,15 +1,21 @@
 @import "../../../../styles/app-variables";
+@import "../../../../styles/settings/settings-breakpoints";
 
 .sec {
 	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: flex-start;
 	position: relative;
 	transition: width 1s ease-in;
-	padding: 250px;
+	padding: 20px;
+
+	@include for-tablet-landscape-up {
+		padding: 250px;
+		justify-content: center;
+	}
 
 	&__title {
 		text-wrap: nowrap;
@@ -24,20 +30,36 @@
 	&__shadow {
 		position: absolute;
 		border-radius: 50%;
-		right: 150px;
-		width: 300px;
+		right: 50px;
+		width: 170px;
+
+		@include for-tablet-landscape-up {
+			right: 150px;
+			width: 300px;
+		}
 	}
 
+
 	&__img {
-		bottom: 35%;
+		bottom: 45%;
 		overflow: hidden;
-		height: 300px;
+		height: 170px;
+
+		@include for-tablet-landscape-up {
+			bottom: 35%;
+			overflow: hidden;
+			height: 300px;
+		}
 	}
 
 	&__shadow {
-		bottom: 20%;
+		bottom: 35%;
 		background-color: black;
 		filter: blur(3px);
 		height: 10px;
+
+		@include for-tablet-landscape-up {
+			bottom: 20%;
+		}
 	}
 }

@@ -1,9 +1,19 @@
 @import "../../../../styles/_app-variables.scss";
+@import "../../../../styles/settings/settings-breakpoints";
 
 ::ng-deep .nav {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+
+	@include for-tablet-landscape-up {
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+    }
+
 
 	@for $i from 1 through 5 {
 		.nav__item:nth-child(#{$i}) {
@@ -17,38 +27,91 @@
 	}
 
 	&__item {
-		min-width: calc(10% / 4);
-		width: calc(100% / 5);
+		width: 100vw;
+		min-height: calc(10% / 4) !important;
+		height: calc(100% / 5) !important;
 		height: 100vh;
 		overflow: hidden;
-		transition: width 0.5s ease-in;
+		transition: height 0.5s ease-in;
 
-		.sec {
-			padding: 50px !important;
-		}
-
-		.sec__title,
-		.sec__subtitle {
-			width: 0px;
+		@include for-tablet-landscape-up {
+			min-width: calc(10% / 4);
+			width: calc(100% / 5);
+			height: 100vh !important;
+			min-height: unset  !important;
 			overflow: hidden;
 			transition: width 0.5s ease-in;
 		}
 
+		.sec {
+			padding: 50px 20px !important;
+
+			@include for-tablet-landscape-up {
+				padding: 50px !important;
+			}
+		}
+
+		.sec__title,
+		.sec__subtitle {
+
+			@include for-tablet-landscape-up {
+				width: 0px;
+				overflow: hidden;
+				transition: width 0.5s ease-in;
+			}
+		}
+
+		.sec__title {
+			font-size: 25px;
+
+			@include for-tablet-landscape-up {
+				font-size: unset;
+			}
+		}
+
+		.sec__subtitle {
+			display: none;
+
+			@include for-tablet-landscape-up {
+				display: block;
+			}
+		}
+
 		.sec__img,
 		.sec__shadow {
-			right: 50px !important;
+			right: 20px !important;
+			@include for-tablet-landscape-up {
+				right: 50px !important;
+			}
+		}
+
+		.sec__img {
+			bottom: -35% !important;
+			@include for-tablet-landscape-up {
+				bottom: 35% !important;
+			}
+		}
+
+		.sec__shadow {
+			bottom: -5% !important;
+			@include for-tablet-landscape-up {
+				bottom: 20% !important;
+			}
 		}
 
 		&:hover {
-			width: 140% !important;
+			@include for-tablet-landscape-up {
+				width: 140% !important;
+				height: 100% !important;
 
-			.sec__title,
-			.sec__subtitle {
-				width: 350px;
-			}
+				.sec__title,
+				.sec__subtitle {
+					width: 350px;
+				}
 
-			.sec__img {
-				right: 150px;
+				.sec__img {
+					right: 150px;
+				}
 			}
 		}
 	}
