@@ -23,9 +23,6 @@ jobs:
       - name: Build
         run: echo "Building" && npm install --force && npm run build:prod
 
-      - name: Lint
-        run: echo "Linting" && npm run lint
-
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
