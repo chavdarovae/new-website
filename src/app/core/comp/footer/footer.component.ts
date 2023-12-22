@@ -1,5 +1,5 @@
 import { NgIf } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, isDevMode } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -12,5 +12,5 @@ import { RouterModule } from '@angular/router';
 })
 export class FooterComponent {
 	@Input() activePath!: string | null;
-
+	logoPath = isDevMode() ? '../../../../assets/img/logo-white.png' : './assets/img/logo-white.png';
 }

@@ -1,5 +1,5 @@
 import { KeyValuePipe, NgFor } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Input, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, inject, isDevMode } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { MENU_ITEMS } from '../../constants/menu-items';
 
@@ -15,6 +15,7 @@ export class HeaderComponent {
 	router  = inject(Router);
 	@Input() activePath!: string | null;
 	menuItems = MENU_ITEMS;
+	logoPath = isDevMode() ? '../../../../assets/img/logo-white.png' : './assets/img/logo-white.png';
 
 	goTo(path:string) {
 		this.router.navigate([`./${path}`]);
