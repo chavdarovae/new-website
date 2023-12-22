@@ -23,5 +23,21 @@
 
 .normal {
 	height: $footer-height;
+
+	.interest,
+	.logo {
+		display: none;
+		@include for-tablet-landscape-up {
+			display: flex;
+		}
+	}
+
+	.address * {
+		text-align: center;
+
+		@include for-tablet-landscape-up {
+			text-align: start;
+		}
+	}
 }
 
