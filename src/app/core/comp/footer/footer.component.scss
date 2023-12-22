@@ -1,6 +1,8 @@
 @import "../../../../styles/app-variables";
+@import "../../../../styles/settings/settings-breakpoints";
 
 .compact {
+	display: none;
 	height: 20px;
 	position: fixed;
 	bottom: 0;
@@ -9,6 +11,10 @@
 	font-family: $font-family-pri;
 	z-index: 10;
 	padding: 5px 20px;
+
+	@include for-tablet-landscape-up {
+		display: flex;
+	}
 
 	* {
 		font-weight: 500;
