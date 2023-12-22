@@ -1,0 +1,33 @@
+name: GitHubPages Deploy
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.17.1]
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        run: echo "Installing" && npm install --force && npm run build:prod
+
+      - name: Build
+        run: echo "Building" && npm install --force && npm run build:prod
+
+      - name: Lint
+        run: echo "Linting" && npm run lint
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-branches
+          folder: dist/frontend
