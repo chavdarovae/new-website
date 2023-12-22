@@ -1,13 +1,19 @@
-@import '../../../../styles/app-variables';
+@import "../../../../styles/app-variables";
+@import "../../../../styles/settings/settings-breakpoints";
 
 :host {
+	$speed: 0.85s;
+	$size: 240px;
+	$ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+
 	display: flex;
 	flex-flow: row nowrap;
 	position: fixed;
 	top: 0;
 	left: 0;
 	height: $header-height;
-	z-index: 10;
+	z-index: 20;
 
 	.logo {
 		width: auto;
@@ -16,7 +22,178 @@
 	}
 
 	.menu {
-		font-size: 2rem;
+		position: fixed;
+
+		&__toggle {
+			opacity: 0;
+			position: absolute;
+			pointer-events: none;
+		}
+
+		.fa-bars {
+			display: block;
+		}
+
+		&.fa-xmark {
+			display: none;
+		}
+
+		&__toggle-backdrop {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 100%;
+			background: $first;
+			backdrop-filter: none;
+			transition: bottom $speed $ease;
+		}
+
+		&__toggle-label {
+			cursor: pointer;
+			height: calc($size * 0.5);
+			width: calc($size * 0.5);
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-end;
+			position: fixed;
+			padding: 20px;
+			top: 0;
+			right: 0;
+			z-index: 40;
+			transform: translate(50%, -50%);
+		}
+
+		&__icon {
+			font-size: 2rem;
+		}
+
+		&__item {
+			cursor: pointer;
+			width: $size;
+			height: $size;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: 50%;
+			overflow: hidden;
+			font-size: 30px;
+			font-weight: 500;
+			font-family: $font-family-sec;
+			position: absolute;
+			left: calc(var(--active-x, 100) * 1vw);
+			top: calc(var(--active-y, 0) * 1vh);
+			transform-origin: top left;
+			transform: translate(0, -100%) scale(0.5);
+			transition: all $speed calc(var(--delay, 0) * 1s) $ease;
+
+
+			@include for-tablet-landscape-up {
+				transform: translate(0, -100%) scale(1);
+			}
+
+			&:hover {
+				scale: 1.1;
+			}
+
+			&:nth-of-type(1) {
+				--delay: 0.1;
+				--x: 15;
+				--y: 35;
+
+				@include for-tablet-landscape-up {
+					--x: 15;
+					--y: 35;
+				}
+			}
+			&:nth-of-type(2) {
+				--delay: 0.2;
+				--x: 45;
+				--y: 47;
+				@include for-tablet-landscape-up {
+					--x: 45;
+					--y: 27;
+				}
+			}
+			&:nth-of-type(3) {
+				--delay: 0.3;
+				--x: 10;
+				--y: 75;
+				@include for-tablet-landscape-up {
+					--x: 22;
+					--y: 75;
+				}
+			}
+			&:nth-of-type(4) {
+				--delay: 0.4;
+				--x: 45;
+				--y: 85;
+				@include for-tablet-landscape-up {
+					--x: 45;
+					--y: 85;
+				}
+			}
+
+			&:nth-of-type(5) {
+				--delay: 0.5;
+				--x: 57;
+				--y: 65;
+				@include for-tablet-landscape-up {
+					--x: 67;
+					--y: 55;
+				}
+			}
+
+			&:nth-of-type(6) {
+				--delay: 0.5;
+				--x: 75;
+				--y: 96;
+				@include for-tablet-landscape-up {
+					--x: 75;
+					--y: 96;
+				}
+			}
+
+			&:nth-of-type(7) {
+				--delay: 0.5;
+				--x: 7;
+				--y: 100;
+				@include for-tablet-landscape-up {
+					--x: 7;
+					--y: 100;
+				}
+			}
+		}
+	}
+
+
+	.menu__toggle:checked ~ .menu__content .menu__item {
+		--active-x: var(--x);
+		--active-y: var(--y);
+	}
+
+	.menu__toggle-label .menu__icon {
+		&.fa-bars {
+			display: block;
+		}
+
+		&.fa-xmark {
+			display: none;
+		}
+	}
+
+	.menu__toggle:checked ~ .menu__toggle-label .menu__icon {
+		&.fa-bars {
+			display: none;
+		}
+
+		&.fa-xmark {
+			display: block;
+		}
+	}
+
+
+	.menu__toggle:checked ~ .menu__toggle-backdrop {
+		bottom: 0;
 	}
 }
-

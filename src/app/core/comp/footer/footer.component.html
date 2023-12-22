@@ -1,7 +1,7 @@
 <div *ngIf="!activePath" class="row row--no-wrap compact">
 	<a [routerLink]="['/impressum']" routerLinkActive="router-link-active">Impressum</a>
-	<a class="mr-20" [routerLink]="['/datenschutz']" routerLinkActive="router-link-active">Datenschutzerklärung</a>
-	<span class="ml-a mr-20" >&copy; Copyright 2023</span>
+	<a [routerLink]="['/datenschutz']" routerLinkActive="router-link-active">Datenschutzerklärung</a>
+	<span class="ml-a" >&copy; Copyright 2023</span>
 </div>
 
 <div *ngIf="activePath" [class]="'col normal ' + activePath">

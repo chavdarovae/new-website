@@ -1,6 +1,24 @@
-
 <a [routerLink]="['/']" class="ml-20">
-	<img class="logo" src="../../../../assets/img/logo-white.png">
+	 <img class="logo" src="../../../../assets/img/logo-white.png">
 </a>
-<a [routerLink]="['/']" class="menu fa-solid fa-bars m-a mr-20"></a>
+<!-- <a [routerLink]="['/']" class="menu fa-solid fa-bars m-a mr-20"></a> -->
 
+<div class="menu">
+	<input class="menu__toggle" type="checkbox" id="menu-toggle" />
+
+	<label [class]="'menu__toggle-backdrop ' + activePath" for="menu-toggle"></label>
+
+	<label class="menu__toggle-label bubble"  for="menu-toggle">
+		<span class="menu__icon fa-solid fa-bars"></span>
+		<span class="menu__icon fa-solid fa-xmark"></span>
+	</label>
+
+	<div class="menu__content">
+		<label *ngFor="let item of menuItems"
+			for="menu-toggle"
+			class="menu__item bubble"
+			(click)="goTo(item[0])" >
+			{{item[1]}}
+		</label>
+	</div>
+</div>
