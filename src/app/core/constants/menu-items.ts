@@ -24,7 +24,7 @@ export const MENU_ITEMS = [
 	['first', TITLE['first']],
 	['second', TITLE['second']],
 	['third', TITLE['third']],
-	['third', TITLE['fourth']],
+	['fourth', TITLE['fourth']],
 	['fifth', TITLE['fifth']],
 	['datenschutz', TITLE['datenschutz']],
 	['impressum', TITLE['impressum']],
