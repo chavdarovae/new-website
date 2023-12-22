@@ -1,0 +1,39 @@
+
+<svg width="173px" height="44px" viewBox="0 0 173 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="92.5528092%" y1="49.1537511%" x2="2.21745597%" y2="50.6762685%" id="linearGradient-yfb8cjfn0a-1">
+            <stop stop-color="#164773" offset="0%"></stop>
+            <stop stop-color="#3B8C6E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-yfb8cjfn0a-2">
+            <stop stop-color="#164773" offset="0%"></stop>
+            <stop stop-color="#3B8C6E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Login" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Login-Inital" transform="translate(-8.000000, -4.000000)">
+            <g id="Group" transform="translate(10.000000, 3.000000)">
+                <text id="Colleto" font-family="Montserrat-Medium, Montserrat" font-size="37" font-weight="400" fill="#393E46">
+                    <tspan x="40.9705627" y="36">Colleto</tspan>
+                </text>
+                <text id="DISPO-TOOL" fill="url(#linearGradient-yfb8cjfn0a-1)" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="11" font-weight="bold">
+                    <tspan x="108.970563" y="10">DISPO TOOL</tspan>
+                </text>
+                <g transform="translate(-2.000000, 2.029437)" id="Group-10">
+                    <g transform="translate(22.353553, 20.146447) rotate(45.000000) translate(-22.353553, -20.146447) translate(7.353553, 4.146447)">
+                        <rect id="Rectangle" fill="url(#linearGradient-yfb8cjfn0a-2)" x="0" y="2" width="30" height="30"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" x="5" y="7" width="20" height="20"></rect>
+                        <g id="menu" transform="translate(7.500000, 9.500000)" stroke="#3B8C6E" stroke-linecap="square">
+                            <line x1="0.5" y1="0.535714286" x2="14.5" y2="0.535714286" id="Line-9"></line>
+                            <line x1="0.5" y1="7.5" x2="14.5" y2="7.5" id="Line-9-Copy"></line>
+                            <line x1="0.5" y1="14.4642857" x2="14.5" y2="14.4642857" id="Line-9-Copy-2"></line>
+                        </g>
+                        <rect id="Rectangle" fill="#FFFFFF" x="10" y="-1.42108547e-14" width="10" height="8"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
+
+

@@ -1,0 +1,37 @@
+
+<svg width="141px" height="31px" viewBox="0 0 141 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <linearGradient x1="92.5528092%" y1="49.0512643%" x2="2.21745597%" y2="50.7581695%" id="linearGradient-7lm8b0vsu_-1">
+            <stop stop-color="#164773" offset="0%"></stop>
+            <stop stop-color="#3B8C6E" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7lm8b0vsu_-2">
+            <stop stop-color="#164773" offset="0%"></stop>
+            <stop stop-color="#3B8C6E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Dispotool" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dispo-Tool-Inital" transform="translate(-10.000000, -1.000000)">
+            <g id="Group" transform="translate(10.000000, 2.000000)">
+                <text id="Colleto" font-family="Montserrat-Medium, Montserrat" font-size="30" font-weight="400" fill="#393E46">
+                    <tspan x="34.9705627" y="29">Colleto</tspan>
+                </text>
+                <text id="DISPO-TOOL" fill="url(#linearGradient-7lm8b0vsu_-1)" fill-rule="nonzero" font-family="Roboto-Bold, Roboto" font-size="9" font-weight="bold">
+                    <tspan x="89.9705627" y="8">DISPO TOOL</tspan>
+                </text>
+                <g transform="translate(0.000000, 0.029437)" id="Logo">
+                    <g id="Group-10" transform="translate(15.595502, 14.055660) rotate(45.000000) translate(-15.595502, -14.055660) translate(5.130386, 2.892870)">
+                        <rect id="Rectangle" fill="url(#linearGradient-7lm8b0vsu_-2)" x="0" y="1.39534884" width="20.9302326" height="20.9302326"></rect>
+                        <rect id="Rectangle" fill="#FFFFFF" x="3.48837209" y="4.88372093" width="13.9534884" height="13.9534884"></rect>
+                        <g id="menu" transform="translate(5.232558, 6.627907)" stroke="#3B8C6E" stroke-linecap="square">
+                            <line x1="0.348837209" y1="0.373754153" x2="10.1162791" y2="0.373754153" id="Line-9"></line>
+                            <line x1="0.348837209" y1="5.23255814" x2="10.1162791" y2="5.23255814" id="Line-9-Copy"></line>
+                            <line x1="0.348837209" y1="10.0913621" x2="10.1162791" y2="10.0913621" id="Line-9-Copy-2"></line>
+                        </g>
+                        <rect id="Rectangle" fill="#FFFFFF" x="6.97674419" y="-9.9145498e-15" width="6.97674419" height="5.58139535"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
